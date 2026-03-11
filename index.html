@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -102,8 +102,10 @@
         position: relative;
         object-fit: cover;
         border: 3px solid #c9a227;
-        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8),
-          0 6px 12px rgba(196, 30, 42, 0.4), 0 0 30px rgba(201, 162, 39, 0.3);
+        box-shadow:
+          0 0 0 2px rgba(0, 0, 0, 0.8),
+          0 6px 12px rgba(196, 30, 42, 0.4),
+          0 0 30px rgba(201, 162, 39, 0.3);
       }
       nav.scrolled .nav-logo-img #navLogo {
         height: 48px;
@@ -112,10 +114,12 @@
       .nav-logo-img:hover #navLogo {
         transform: scale(1.08) translateY(-3px);
         border-color: #e8be3a;
-        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.9),
+        box-shadow:
+          0 0 0 2px rgba(0, 0, 0, 0.9),
           inset 0 -3px 10px rgba(0, 0, 0, 0.6),
           inset 0 3px 10px rgba(255, 255, 255, 0.15),
-          0 8px 20px rgba(196, 30, 42, 0.6), 0 0 40px rgba(201, 162, 39, 0.5);
+          0 8px 20px rgba(196, 30, 42, 0.6),
+          0 0 40px rgba(201, 162, 39, 0.5);
       }
 
       .nav-logo-text {
@@ -234,7 +238,8 @@
       .hero-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(
+        background:
+          linear-gradient(
             180deg,
             rgba(4, 4, 4, 0.85) 0%,
             rgba(4, 4, 4, 0.4) 35%,
@@ -254,7 +259,8 @@
         position: absolute;
         inset: 0;
         z-index: 2;
-        background: radial-gradient(
+        background:
+          radial-gradient(
             ellipse 70% 55% at 50% 45%,
             rgba(139, 0, 0, 0.12) 0%,
             transparent 65%
@@ -286,7 +292,8 @@
         position: absolute;
         inset: 0;
         z-index: 2;
-        background-image: repeating-linear-gradient(
+        background-image:
+          repeating-linear-gradient(
             -55deg,
             transparent 0px,
             transparent 120px,
@@ -377,8 +384,10 @@
         animation: logoFloat 3s ease-in-out infinite;
         object-fit: cover;
         border: 3px solid rgba(201, 162, 39, 0.6);
-        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.9),
-          0 10px 28px rgba(196, 30, 42, 0.4), 0 0 50px rgba(201, 162, 39, 0.3),
+        box-shadow:
+          0 0 0 3px rgba(0, 0, 0, 0.9),
+          0 10px 28px rgba(196, 30, 42, 0.4),
+          0 0 50px rgba(201, 162, 39, 0.3),
           0 16px 60px rgba(0, 0, 0, 0.6);
         position: relative;
       }
@@ -404,7 +413,8 @@
       .hero-title .line1 {
         display: block;
         color: var(--white);
-        text-shadow: 0 0 120px rgba(196, 30, 42, 0.25),
+        text-shadow:
+          0 0 120px rgba(196, 30, 42, 0.25),
           0 4px 20px rgba(0, 0, 0, 0.8);
       }
 
@@ -521,8 +531,10 @@
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
         overflow: hidden;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04),
-          inset 0 -1px 4px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.3);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.04),
+          inset 0 -1px 4px rgba(0, 0, 0, 0.5),
+          0 4px 12px rgba(0, 0, 0, 0.3);
       }
       .program-icon svg,
       .contact-icon svg,
@@ -570,8 +582,10 @@
           drop-shadow(0 0 30px rgba(201, 162, 39, 0.2));
         background: linear-gradient(145deg, #151515 0%, #1f1f1f 100%);
         border-color: rgba(201, 162, 39, 0.5);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06),
-          inset 0 -2px 6px rgba(0, 0, 0, 0.5), 0 6px 16px rgba(0, 0, 0, 0.4),
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.06),
+          inset 0 -2px 6px rgba(0, 0, 0, 0.5),
+          0 6px 16px rgba(0, 0, 0, 0.4),
           0 0 24px rgba(201, 162, 39, 0.15);
       }
       .program-card:hover .program-icon svg {
@@ -1666,7 +1680,9 @@
       .fade-in-section {
         opacity: 0;
         transform: translateY(36px);
-        transition: opacity 0.8s ease, transform 0.8s ease;
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
       }
       .fade-in-section.visible {
         opacity: 1;
@@ -2239,59 +2255,35 @@
         <div class="pricing-header fade-in-section">
           <div class="section-label">Investment</div>
           <h2 class="section-title">
-            SIMPLE <span class="gold">PRICING</span>
+            <span class="gold">PRICING</span>
           </h2>
-          <p style="color: var(--grey); font-size: 1rem">
-            Transparent pricing, no hidden fees. Tourists and short-term
-            visitors — contact us for daily or weekly rates.
+          <p
+            style="
+              color: var(--white);
+              font-size: 1.2rem;
+              margin-top: 2rem;
+              text-align: center;
+            "
+          >
+            Please visit us for pricing information.
+          </p>
+          <p
+            style="
+              color: var(--grey);
+              font-size: 1rem;
+              margin-top: 1rem;
+              text-align: center;
+            "
+          >
+            Contact us at
+            <a
+              href="tel:+9779705290094"
+              style="color: var(--gold); text-decoration: none"
+              >+977 9705290094</a
+            >
+            for more details.
           </p>
         </div>
-        <div class="pricing-cards fade-in-section">
-          <div class="price-card">
-            <div class="price-type">Drop-In / Tourist</div>
-            <div class="price-amount">CALL</div>
-            <div class="price-period">
-              Contact us for daily &amp; weekly rates
-            </div>
-            <ul class="price-includes">
-              <li>Single class access</li>
-              <li>All disciplines available</li>
-              <li>Equipment available</li>
-              <li>Tourist-friendly</li>
-            </ul>
-            <a
-              href="tel:+9779705290094"
-              class="btn-primary"
-              style="width: 100%; justify-content: center"
-              >📞 +977 9705290094</a
-            >
-          </div>
-          <div class="price-card featured">
-            <div class="price-type">Monthly Membership</div>
-            <div class="price-amount">5,000</div>
-            <div class="price-currency">NPR / Month</div>
-            <div class="price-period">Unlimited access to all classes</div>
-            <ul class="price-includes">
-              <li>All daily classes included</li>
-              <li>All disciplines &amp; programs</li>
-              <li>Beginner to advanced classes</li>
-              <li>Internationally certified coaching</li>
-              <li>Open gym access</li>
-              <li>Equipment use included</li>
-            </ul>
-            <a
-              href="tel:+9779705290094"
-              class="btn-primary"
-              style="width: 100%; justify-content: center"
-              >📞 Join Now</a
-            >
-          </div>
-        </div>
-        <p class="price-note">
-          Questions about pricing?
-          <a href="tel:+9779705290094">Call us directly</a> — we're happy to
-          work out the right plan for your stay in Pokhara.
-        </p>
       </div>
     </section>
 
@@ -2579,7 +2571,7 @@
       }
       document.querySelectorAll(".nav-links a").forEach((a) => {
         a.addEventListener("click", () =>
-          document.getElementById("navLinks").classList.remove("open")
+          document.getElementById("navLinks").classList.remove("open"),
         );
       });
 
@@ -2592,7 +2584,7 @@
             }
           });
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       );
 
       document
